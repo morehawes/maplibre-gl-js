@@ -40,6 +40,8 @@ const map = new Map({
 });
 ```
 
+Note that the main difference here is that while Leaflet loads raster tiles directly from a single URL, MapLibre accepts a style definition which may contain multiple vector and raster data sources.
+
 ## Adding a Marker
 
 ### Leaflet
