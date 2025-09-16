@@ -66,11 +66,21 @@ new maplibregl.Marker()
 
 ### Leaflet
 
+In Leaflet, a GeoJSON object must be passed to the `L.geoJSON()` layer.
+
 ```js
-L.geoJSON('data.geojson').addTo(map);
+L.geoJSON({
+  type: "FeatureCollection",
+  features: [
+    // GeoJSON features
+  ],
+}).addTo(map);
 ```
 
+
 ### MapLibre
+
+MapLibre accepts both a URL to a GeoJSON file or a GeoJSON object.
 
 ```js
 map.on('load', function () {
