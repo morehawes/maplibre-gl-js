@@ -14,6 +14,10 @@ Install MapLibre GL JS and replace Leaflet with MapLibre in your project:
 npm install maplibre-gl
 ```
 
+### Coordinate Order
+
+It is important to note that Leaflet uses `[lat, lng]` ordering for coordinates, while MapLibre (like GeoJSON) uses [`[lng, lat]`](https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLat/) ordering.
+
 ## Initializing the Map
 
 ### Leaflet
