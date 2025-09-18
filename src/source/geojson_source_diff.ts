@@ -38,7 +38,7 @@ export type GeoJSONFeatureDiff = {
      */
     newGeometry?: GeoJSON.Geometry;
     /**
-     * Setting to `true` will remove all preperties
+     * Setting to `true` will remove all properties
      */
     removeAllProperties?: boolean;
     /**
